@@ -1,0 +1,53 @@
+.header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #2563eb 100%);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.45);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: inherit;
+}
+
+.link:visited {
+  color: inherit;
+}
+
+.link:hover .title {
+  opacity: 0.85;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  transition: opacity var(--t-fast);
+}
+
+.subtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 800px) {
+  .inner {
+    padding: 16px;
+  }
+}

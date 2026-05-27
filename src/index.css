@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-bg:            #e8edf5;
+  --c-surface:       #ffffff;
+  --c-surface-alt:   #f8faff;
+
+  --c-border:        #dde3ef;
+  --c-border-light:  #eef1f8;
+
+  --c-primary:       #2563eb;
+  --c-primary-dark:  #1d4ed8;
+  --c-primary-light: #eff6ff;
+  --c-primary-muted: #bfdbfe;
+
+  --c-star:          #f59e0b;
+  --c-star-empty:    #d1d9e8;
+
+  --c-text:          #1e293b;
+  --c-text-secondary:#475569;
+  --c-text-muted:    #94a3b8;
+
+  --c-error:         #dc2626;
+  --c-error-bg:      #fef2f2;
+  --c-error-border:  #fca5a5;
+
+  --c-success:       #16a34a;
+  --c-success-bg:    #f0fdf4;
+  --c-success-border:#86efac;
+
+  --c-danger:        #ef4444;
+  --c-danger-bg:     #fff5f5;
+  --c-danger-border: #fecaca;
+
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:  0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+  --shadow-lg:  0 10px 40px rgba(0,0,0,.1),  0 4px 12px rgba(0,0,0,.05);
+
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  16px;
+
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-mono:    'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  --t-fast: 120ms ease;
+  --t-base: 200ms ease;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--c-bg);
+  color: var(--c-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
