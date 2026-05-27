@@ -1,7 +1,7 @@
 import type { Book, CreateBookInput, ListBooksQuery, PaginatedResponse } from '../types/book';
 import { ApiError } from '../types/book';
 
-const BASE = '/api/books';
+const BASE = `${import.meta.env.VITE_API_URL ?? ''}/api/books`;
 
 async function handleResponse<T>(res: Response): Promise<T> {
   if (res.ok) return res.json() as Promise<T>;
